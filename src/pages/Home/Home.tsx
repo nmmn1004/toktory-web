@@ -3,7 +3,9 @@ import React from 'react';
 import Logo from '../../assets/Logo.svg'
 import Download from '../../assets/Download.png'
 import Banner from '../../assets/main-banner/banner1.png'
+import ExampleMail from '../../assets/example/example_mail.png'
 import { EXAMPLE_LIST } from '../../assets/example';
+
 
 import './Home.css'
 
@@ -46,11 +48,16 @@ function Home() {
                 </span>
                 <br/><img src={item.src} alt={item.alt} className="home-introduce-img" />
               </div>
+              
+            </div>
+          ))}
+              <div className="home-introduce-item">
+              <br />
+                <img src={ExampleMail} alt="" className="home-introduce-img" />
+              </div>
               <footer className='home-footer'>
 
               </footer>
-            </div>
-          ))}
         </div>
       </article>
     </>

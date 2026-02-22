@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Logo from '../../assets/Logo.svg'
 import Download from '../../assets/Download.png'
-import App from '../../assets/app/toktory.apk'
+import App from '../../../public/app/toktory.apk'
 import Banner from '../../assets/main-banner/banner1.png'
 import { EXAMPLE_LIST, ExampleItem } from '../../assets/example';
 

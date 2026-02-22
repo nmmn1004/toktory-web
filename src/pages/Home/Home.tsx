@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Logo from '../../assets/Logo.svg'
 import Download from '../../assets/Download.png'
+import App from '../../assets/app/toktory.apk'
 import Banner from '../../assets/main-banner/banner1.png'
 import { EXAMPLE_LIST, ExampleItem } from '../../assets/example';
 
@@ -14,7 +15,7 @@ function Home() {
       <header className="home-header-container">
         <img src={Logo} alt="TokTory Logo" className="home-header-logo-img" />
         <span className="home-header-title">TokTory</span>
-        <a href={Download} download="TokTory_Download.png">
+        <a href={App} download="toktory.apk">
           <img src={Download} className="home-header-download" />
         </a>
       </header>

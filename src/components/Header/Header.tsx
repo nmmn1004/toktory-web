@@ -10,9 +10,9 @@ function Header() {
         <Link to="/">TokTory</Link>
       </div>
 
-      <a className="main-header-menu">
-        <img src={Menu}/>
-      </a>
+      <button className="main-header-menu">
+        <img src={Menu} alt=''/>
+      </button>
     </header>
   );
 }

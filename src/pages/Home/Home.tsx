@@ -1,10 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import Logo from '../../assets/Logo.svg'
 import Download from '../../assets/Download.png'
 import Banner from '../../assets/main-banner/banner1.png'
-import { EXAMPLE_LIST, ExampleItem } from '../../assets/example';
+import { EXAMPLE_LIST } from '../../assets/example';
 
 import './Home.css'
 
@@ -15,7 +14,7 @@ function Home() {
         <img src={Logo} alt="TokTory Logo" className="home-header-logo-img" />
         <span className="home-header-title">TokTory</span>
         <a href="../../../public/app/toktory.apk" download="toktory.apk">
-          <img src={Download} className="home-header-download" />
+          <img src={Download} className="home-header-download" alt=''/>
         </a>
       </header>
       

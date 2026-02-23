@@ -15,7 +15,7 @@ function Home() {
       <header className="home-header-container">
         <img src={Logo} alt="TokTory Logo" className="home-header-logo-img" />
         <span className="home-header-title">TokTory</span>
-        <a href="../../../public/app/toktory.apk" download="toktory.apk">
+        <a href="https://drive.google.com/file/d/1BHEKFTwUuyoUkD1FawVZUb4MGrq0ODac/view?usp=sharing">
           <img src={Download} className="home-header-download" alt=''/>
         </a>
       </header>

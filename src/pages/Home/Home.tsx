@@ -53,7 +53,7 @@ function Home() {
           ))}
               <div className="home-introduce-item">
               <br />
-                <img src={ExampleMail} alt="" className="home-introduce-img" />
+                <img src={ExampleMail} alt="" className="home-introduce-email" />
               </div>
               <footer className='home-footer'>
 

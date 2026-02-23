@@ -63,6 +63,13 @@
     height: 350px;
 }
 
+.home-introduce-email {
+    width: 70vw;
+    max-width: 900px;
+    height: auto;
+
+}
+
 .home-introduce-title {
     display: inline-block;
 

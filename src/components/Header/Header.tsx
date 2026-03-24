@@ -1,19 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import SideBar from '../SideBar/SideBar';
 
 import Menu from '../../assets/Menu.png'
 
 function Header() {
-  return (
-    <header className='main-header'>
-      <div className="main-header-title">
-        <Link to="/">TokTory</Link>
-      </div>
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-      <button className="main-header-menu">
-        <img src={Menu} alt=''/>
-      </button>
-    </header>
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <>
+      <header className='main-header'>
+        <div className="main-header-title">
+          <Link to="/">TokTory</Link>
+        </div>
+
+        <button className="main-header-menu" onClick={toggleMenu}>
+          <img src={Menu} alt='menu'/>
+        </button>
+      </header>
+
+      <SideBar isOpen={isMenuOpen} onClose={toggleMenu} />
+    </>
   );
 }
 

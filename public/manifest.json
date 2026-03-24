@@ -1,0 +1,15 @@
+{
+  "short_name": "TokTory",
+  "name": "TokTory | 미래 행동을 바꾸는 넛지형 가계부",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF"
+}

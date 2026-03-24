@@ -8,6 +8,6 @@ export interface ExampleItem {
 }
 
 export const EXAMPLE_LIST: ExampleItem[] = [
-  { id: 1, src: example1, alt: "예시 이미지 1" },
-  { id: 2, src: example2, alt: "예시 이미지 2" }
+  { id: 1, src: example1, alt: "톡토리 가계부 지출 기록 및 조회 화면 예시" },
+  { id: 2, src: example2, alt: "AI 소비 흐름 분석 및 미래 예측 서비스 화면 예시" }
 ];

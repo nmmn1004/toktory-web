@@ -10,20 +10,25 @@ import { EXAMPLE_LIST } from '../../assets/example';
 import './Home.css'
 
 function Home() {
+  const handleDownloadClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    alert('서비스 준비 중입니다.');
+  };
+
   return (
     <>
       <header className="home-header-container">
         <img src={Logo} alt="TokTory Logo" className="home-header-logo-img" />
         <span className="home-header-title">TokTory</span>
-        <a href="https://drive.google.com/file/d/1BHEKFTwUuyoUkD1FawVZUb4MGrq0ODac/view?usp=sharing">
-          <img src={Download} className="home-header-download" alt=''/>
+        <a href="/" onClick={handleDownloadClick}>
+          <img src={Download} className="home-header-download" alt='톡토리 앱 다운로드'/>
         </a>
       </header>
       
       <article className="home-content">
         {/* 배너 영역 */}
         <div className='home-banner-container'>
-          <img src={Banner} alt="introduce" className='home-banner-img'/>
+          <img src={Banner} alt="넛지형 가계부 톡토리 메인 배너" className='home-banner-img'/>
         </div>
 
         {/* 서비스 소개 리스트 영역 */}
@@ -53,7 +58,7 @@ function Home() {
           ))}
               <div className="home-introduce-item">
               <br />
-                <img src={ExampleMail} alt="" className="home-introduce-email" />
+                <img src={ExampleMail} alt="비즈니스 문의 예시 이미지" className="home-introduce-email" />
               </div>
               <footer className='home-footer'>
 
